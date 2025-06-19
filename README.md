@@ -16,7 +16,7 @@ Este repositório contém exercícios, projetos e atividades práticas realizada
 
 📄 README descritivo por exercício
 
-💬 Códigos comentados linha por linha para facilitar o entendimento
+💬 Códigos comentados 
 
 🧰 Tecnologias Utilizadas
 
