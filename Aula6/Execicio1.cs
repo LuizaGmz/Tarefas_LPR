@@ -19,7 +19,7 @@
 
         while (!sair)
         {
-            Console.WriteLine("\n===== Menu Principal =====");
+            Console.WriteLine("===== Menu Principal =====");
             Console.WriteLine("1 - Cadastrar Heróis");
             Console.WriteLine("2 - Selecionar Equipe");
             Console.WriteLine("3 - Exibir Equipe");
@@ -88,7 +88,7 @@
         ref string equipe2, ref string poderEquipe2, ref int pontEquipe2,
         ref string equipe3, ref string poderEquipe3, ref int pontEquipe3)
     {
-        Console.WriteLine("\n===== Heróis Cadastrados =====");
+        Console.WriteLine("===== Heróis Cadastrados =====");
         Console.WriteLine($"1 - {Hero1}" );
         Console.WriteLine($"2 - {Hero2}" );
         Console.WriteLine($"3 - {Hero3}" );

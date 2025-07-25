@@ -29,9 +29,7 @@ class Program
                 repet++;
             }
             Console.WriteLine($"O FBI encontrou {repet} Ocorrencias:");
-        else {
-            Console.WriteLine("Nenhuma Ocorrencia");
-        }
+        
         }
 
     }
