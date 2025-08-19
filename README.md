@@ -1,27 +1,31 @@
-📘 Tarefas_LPR
+# 📘 Tarefas_LPR
+**Repositório de tarefas da disciplina Linguagem de Programação, com foco em C++ e C#.**
 
-Repositório de tarefas da disciplina Linguagem de Programação, com foco em C++ e C#.
+🧠 **Atividades organizadas para estudo, prática e evolução na programação.**
 
-🧠 Atividades organizadas para estudo, prática e evolução na programação.
+---
 
-📌 Sobre o Repositório
+## 📌 Sobre o Repositório
+**Este repositório contém exercícios, projetos e atividades práticas realizadas ao longo da disciplina.**  
 
-Este repositório contém exercícios, projetos e atividades práticas realizadas ao longo da disciplina. As tarefas são separadas por pastas e incluem:
+As tarefas estão separadas por pastas e incluem:  
 
-✅ Enunciados
+- ✅ **Enunciados**  
+- 💻 **Códigos-fonte (C++ e C#)**  
+- 📝 **Relatórios e comentários**  
+- 📄 **README descritivo do exercício**  
+- 💬 **Códigos comentados**  
 
-💻 Códigos-fonte (C++ e C#)
+---
 
-📝 Relatórios e comentários
+## 🧰 Tecnologias Utilizadas
+**Linguagens e ferramentas utilizadas nos exercícios:**  
 
-📄 README descritivo por exercício
+- 🔹 **C++**  
+- 🔸 **C#**  
 
-💬 Códigos comentados 
+---
 
-🧰 Tecnologias Utilizadas
+## 📁 Estrutura do Projeto
+**Organização das pastas e arquivos:**  
 
-🔹 C++ 
-
-🔸 C# 
-
-📁 Estrutura do Projeto
