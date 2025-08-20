@@ -29,14 +29,13 @@ As tarefas estão separadas por pastas e incluem:
 ## 📁 Estrutura do Projeto
 **Organização das pastas e arquivos:**  
 Tarefas_LPR/
-  ├── 1º trimestre/
-    │   ├── Aula1/
-    │   ├── Aula4/
-    │   └── Aula5/
-  ├── 2º trimestre/
-  │   ├── Aula6/
-  │   ├── Aula7/
-  │   ├── Aula8/
-  │   └── Aula9/
-
+├── 1º Trimestre/
+│ ├── Aula1/
+│ ├── Aula4/
+│ └── Aula5/
+├── 2º Trimestre/
+│ ├── Aula6/
+│ ├── Aula7/
+│ ├── Aula8/
+│ └── Aula9/
 
