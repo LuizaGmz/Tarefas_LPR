@@ -28,7 +28,6 @@ As tarefas estão separadas por pastas e incluem:
 
 ## 📁 Estrutura do Projeto
 **Organização das pastas e arquivos:**  
-## 📁 Estrutura do Projeto
 
 Tarefas_LPR/
 ├── 1º Trimestre/
