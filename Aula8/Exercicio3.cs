@@ -1,26 +1,29 @@
-﻿using System.Reflection.Metadata;
-
-using System;
+﻿using System;
+using System.Reflection.Metadata;
 using System.Runtime.InteropServices;
+
 class Program
 {
-
+    // Estrutura que define um herói com nome, poder e pontuação
     public struct Heroi
     {
-        public int pont;
-        public string nome;
-        public string poder;
+        public int pont;      // Pontuação do herói
+        public string nome;   // Nome do herói
+        public string poder;  // Poder do herói
     };
+
+    // Array que armazena até 5 heróis
     static Heroi[] herois = new Heroi[5];
-    static int totalHerois = 0;
-    static int[] equipe = new int[3];
-    static bool finalEquip = false;
+    static int totalHerois = 0;       // Contador de heróis cadastrados
+    static int[] equipe = new int[3]; // Índices dos heróis selecionados para a equipe
+    static bool finalEquip = false;   // Indica se a equipe foi selecionada
 
     static void Main()
     {
-
-        menuPrincipal();
+        menuPrincipal(); // Inicia o menu principal
     }
+
+    // Menu principal com opções para o usuário
     static void menuPrincipal()
     {
         bool exit = false;
@@ -38,34 +41,35 @@ class Program
             switch (opcao)
             {
                 case "1":
-                    CadastrarHerois();
+                    CadastrarHerois(); // Chama função para cadastrar heróis
                     break;
                 case "2":
-                    SelecionarEquipe();
+                    SelecionarEquipe(); // Chama função para selecionar equipe
                     break;
                 case "3":
-                    exibirEquipe();
+                    exibirEquipe(); // Chama função para exibir equipe
                     break;
                 case "4":
-                    exit = true;
+                    exit = true; // Sai do programa
                     break;
-
             }
         }
-
     }
 
+    // Função para cadastrar heróis
     static void CadastrarHerois()
     {
         if (totalHerois >= 5)
         {
             Console.WriteLine("Limite excedido");
-
+            return;
         }
+
+        // Cadastro de heróis restantes
         for (int i = totalHerois; i < 5; i++)
         {
             Console.WriteLine($"Digite o nome do {i + 1} heroi:");
-            herois[i].nome =Console.ReadLine();
+            herois[i].nome = Console.ReadLine();
 
             Console.Write("Poder: ");
             herois[i].poder = Console.ReadLine();
@@ -73,14 +77,12 @@ class Program
             Console.Write("Pontuaçao: ");
             herois[i].pont = int.Parse(Console.ReadLine());
 
-            totalHerois++;
-
-
-
+            totalHerois++; // Atualiza contador
         }
     }
-    
-  static void SelecionarEquipe()
+
+    // Função para selecionar a equipe de 3 heróis
+    static void SelecionarEquipe()
     {
         if (totalHerois < 3)
         {
@@ -88,32 +90,31 @@ class Program
             return;
         }
 
+        // Mostra todos os heróis cadastrados
         Console.WriteLine("--- Lista de Heróis ---");
         for (int i = 0; i < totalHerois; i++)
         {
             Console.WriteLine($"{i + 1} - {herois[i].nome} | Poder: {herois[i].poder} | Pontuação: {herois[i].pont}");
         }
 
+        // Seleção dos 3 heróis para a equipe
         for (int i = 0; i < 3; i++)
         {
             int escolha;
-
             do
             {
                 Console.Write($"\nEscolha o {i + 1}º herói para a equipe (1 a {totalHerois}): ");
                 escolha = int.Parse(Console.ReadLine());
+            } while (escolha == -1); // Condição básica de validação (poderia ser melhorada)
 
-          
-
-            } while (escolha == -1);
-
-            equipe[i] = escolha - 1;
+            equipe[i] = escolha - 1; // Armazena o índice do herói na equipe
         }
 
-        finalEquip = true;
+        finalEquip = true; // Marca que a equipe foi montada
         Console.WriteLine("\nEquipe selecionada com sucesso!");
     }
 
+    // Calcula a pontuação total da equipe
     static int Calculejadora()
     {
         int total = 0;
@@ -124,6 +125,7 @@ class Program
         return total;
     }
 
+    // Exibe os heróis selecionados na equipe e a pontuação total
     static void exibirEquipe()
     {
         if (!finalEquip)
@@ -142,4 +144,5 @@ class Program
         int pontuacaoTotal = Calculejadora();
         Console.WriteLine($"Pontuacao total: {pontuacaoTotal}");
     }
-    }
+}
+//
