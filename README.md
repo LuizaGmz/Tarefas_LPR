@@ -32,8 +32,8 @@ Linguagens e ferramentas utilizadas nos exercícios:
 ## 📂 Estrutura do Projeto
 
 Organização das pastas e arquivos:
-Tarefas_LPR/
 
+    Tarefas_LPR/
     ├── 1º Trimestre/
     │   ├── Aula1/
     │   ├── Aula4/
