@@ -33,6 +33,7 @@ Linguagens e ferramentas utilizadas nos exercícios:
 
 Organização das pastas e arquivos:
 Tarefas_LPR/
+
     ├── 1º Trimestre/
     │   ├── Aula1/
     │   ├── Aula4/
